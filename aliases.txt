@@ -1,0 +1,23 @@
+#### Directory Aliases ####
+alias ..='cd ..'
+alias ~='cd ~'
+alias code='cd ~/Code/'
+alias downloads='cd ~/Downloads/'
+alias desktop='cd ~/Desktop/'
+
+#### Git Aliases ####
+alias gsh='git stash'
+alias gcm='git commit'
+alias gps='git push'
+alias gpl='git pull'
+alias gco='git checkout'
+alias gbr='git branch'
+alias gft='git fetch'
+alias gmg='git merge --no-ff'
+alias gad='git add'
+alias gaa='gad -A'
+
+#### Personal Aliases ####
+alias pycast='code && cd pycast && source activate pycast_env'
+alias pycast-old='code && cd pycast && source bin/activate'
+alias schwing='code && cd SchwingTrade && source bin/activate'

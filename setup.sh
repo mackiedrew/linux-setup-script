@@ -1,5 +1,11 @@
 #!/bin/sh
 
+#### Gather User Data ####
+echo -n 'Enter your GIT name: '
+read git_name
+echo -n 'Enter your GIT email: '
+read git_email
+
 #### Housekeeping ####
 cwd=$(pwd)
 sudo apt-get update
@@ -33,8 +39,8 @@ sudo apm install autocomplete-python
 #### GIT ####
 sudo apt-get install -y git
 sudo apt-get install -fy
-git config --global user.name "Mackenzie Drew"
-git config --global user.email "mackiedrew@gmail.com"
+git config --global user.name $git_name
+git config --global user.email $git_email
 git config --global push.default matching
 git config --global core.editor "vim"
 
@@ -73,3 +79,10 @@ sudo apt-get install -y p7zip-full
 sudo apt-get install -f
 sudo apt-get install -y virtualbox
 sudo apt-get install -f
+
+# Setup Aliases
+cd $cwd
+cp -v -f ./aliases.txt ~/
+mv ~/aliases.txt ~/.aliases
+sudo echo "source ~/.aliases" >> ~/.bashrc
+sudo source ~/.bashrc
