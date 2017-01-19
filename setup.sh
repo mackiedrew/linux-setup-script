@@ -36,6 +36,7 @@ sudo apt-get install -fy
 git config --global user.name "Mackenzie Drew"
 git config --global user.email "mackiedrew@gmail.com"
 git config --global push.default matching
+git config --global core.editor "vim"
 
 #### JavaScript ####
 sudo apt-get install -y npm
