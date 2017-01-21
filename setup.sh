@@ -98,6 +98,8 @@ cd $cwd
 apt-get install -f
 
 #### Easy Installs ####
+apt-get install -y xclip
+apt-get install -f
 apt-get install -y trash-cli
 apt-get install -f
 apt-get install -y vlc-nox
