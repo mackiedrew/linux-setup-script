@@ -74,18 +74,24 @@ npm i -g eslint-plugin-jsx-a11y
 npm i -g eslint-plugin-react
 npm i -g eslint-plugin-import
 
-#### Easy Programs ####
+#### Python Install ####
+apt-get install -y python3-pip
+apt-get install -f
+apt-get install -y python3-venv
+apt-get install -f
+
+#### Graphics Tools ####
 apt-get install -y inkscape
 apt-get install -f
 apt-get install -y gimp
 apt-get install -f
+
+#### Easy Installs ####
 apt-get install -y trash-cli
 apt-get install -f
 apt-get install -y vlc-nox
 apt-get install -f
 apt-get install -y audacity
-apt-get install -f
-apt-get install -y python3-pip
 apt-get install -f
 apt-get install -y gparted
 apt-get install -f
