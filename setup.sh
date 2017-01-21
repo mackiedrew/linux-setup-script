@@ -51,6 +51,11 @@ git config --global user.email $git_email
 git config --global push.default matching
 git config --global core.editor "vim"
 
+#### Install Gitter ####
+wget -c https://update.gitter.im/linux64/gitter_3.1.0_amd64.deb
+dpkg -i gitter_3.1.0_amd64.deb
+rm gitter*.deb
+
 #### JavaScript ####
 apt-get install -y npm
 apt-get install -f
