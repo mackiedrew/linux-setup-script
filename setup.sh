@@ -55,6 +55,7 @@ git config --global core.editor "vim"
 wget -c https://update.gitter.im/linux64/gitter_3.1.0_amd64.deb
 dpkg -i gitter_3.1.0_amd64.deb
 rm gitter*.deb
+cd $cwd
 
 #### JavaScript ####
 apt-get install -y npm
@@ -84,6 +85,16 @@ apt-get install -f
 apt-get install -y inkscape
 apt-get install -f
 apt-get install -y gimp
+apt-get install -f
+
+#### Install Anki ####
+wget -c https://apps.ankiweb.net/downloads/current/anki-2.0.39-amd64.tar.bz2
+tar xjf anki-2.0.39-amd64.tar.bz2
+cd anki-2.0.39
+sudo make install
+cd ..
+rm -r ./anki*
+cd $cwd
 apt-get install -f
 
 #### Easy Installs ####
