@@ -110,7 +110,11 @@ apt-get install -y gparted
 apt-get install -f
 apt-get install -y p7zip-full
 apt-get install -f
+
+#### Virtual Machine ####
 apt-get install -y virtualbox
+apt-get install -f
+apt-get install -y virtualbox-qt
 apt-get install -f
 
 # Setup Aliases
