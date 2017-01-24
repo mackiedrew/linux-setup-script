@@ -97,6 +97,12 @@ rm -r ./anki*
 cd $cwd
 apt-get install -f
 
+#### Install Slack ####
+wget -c https://downloads.slack-edge.com/linux_releases/slack-desktop-2.4.2-amd64.deb
+dpkg -i slack-desktop-2.4.2-amd64.deb
+rm slack*.deb
+cd $cwd
+
 #### Easy Installs ####
 apt-get install -y xclip
 apt-get install -f
@@ -110,6 +116,11 @@ apt-get install -y gparted
 apt-get install -f
 apt-get install -y p7zip-full
 apt-get install -f
+
+#### Configure Backup ####
+apt-get install -y rsync
+apt-get install -f
+echo "rsync -zrvh ~/../ /media/mackie/Home\ Backup" >> ~/.bashrc
 
 #### Virtual Machine ####
 apt-get install -y virtualbox
