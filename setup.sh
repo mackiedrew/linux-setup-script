@@ -66,6 +66,7 @@ ln -s /usr/bin/nodejs /usr/bin/node
 apt-get install -y gulp
 
 #### NPM Modules ####
+npm i -g yarn
 npm i -g gulp
 npm i -g eslint
 npm i -g eslint-plugin-babel
@@ -74,6 +75,10 @@ npm i -g eslint-config-airbnb
 npm i -g eslint-plugin-jsx-a11y
 npm i -g eslint-plugin-react
 npm i -g eslint-plugin-import
+npm i -g create-react-app
+
+#### Node School ####
+./node_school.sh
 
 #### Python Install ####
 apt-get install -y python3-pip
