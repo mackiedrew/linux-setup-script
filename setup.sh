@@ -5,6 +5,8 @@ echo -n 'Enter your GIT name: '
 read git_name
 echo -n 'Enter your GIT email: '
 read git_email
+echo -n 'Enter your GitHub username: '
+read git_user
 
 #### Housekeeping ####
 cwd=$(pwd)
@@ -48,6 +50,7 @@ apt-get install -y git
 apt-get install -fy
 git config --global user.name $git_name
 git config --global user.email $git_email
+git config --global user.name $git_user
 git config --global push.default matching
 git config --global core.editor "vim"
 
