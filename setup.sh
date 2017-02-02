@@ -29,21 +29,8 @@ cd $cwd
 #### Text Editors ####
 apt-get install -y vim
 apt-get install -f
-wget -c https://github.com/atom/atom/releases/download/v1.11.2/atom-amd64.deb
-dpkg -i atom-amd64.deb
-rm atom-amd64.deb
-cd $cwd
-
-#### Install Atom Packages ####
-apm update
-apm install linter
-apm install linter-pylint
-apm install vim-mode
-apm install project-manager
-apm install python-tools
-apm install python-indent
-apm install python-snippets
-apm install autocomplete-python
+#./atom.sh
+./vscode.sh
 
 #### GIT ####
 apt-get install -y git
@@ -81,7 +68,10 @@ npm i -g eslint-plugin-import
 npm i -g create-react-app
 
 #### Node School ####
-./node_school.sh
+# ./node_school.sh
+
+#### Insttall Meteor ####
+curl https://install.meteor.com/ | sh
 
 #### Python Install ####
 apt-get install -y python3-pip
