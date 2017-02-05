@@ -126,9 +126,13 @@ apt-get install -f
 apt-get install -y virtualbox-qt
 apt-get install -f
 
-# Setup Aliases
+#### Setup Aliases ####
 cd $cwd
 cp -v -f ./aliases.txt ~/
 mv ~/aliases.txt ~/.aliases
 echo "source ~/.aliases" >> ~/.bashrc
+source ~/.bashrc
+
+#### Change Bash Prompt ####
+echo "export PS1=\"\[\033[38;5;26m\]⛴  \[\033[38;5;254m\]\w\[$(tput sgr0)\]\[$(tput sgr0)\]\[\033[38;5;15m\] > \[$(tput sgr0)\]\"" >> ~/.bashrc
 source ~/.bashrc
